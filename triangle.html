@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .item{background: red;}
+
+        #list{
+            width: 420px;
+            height: 30px;
+        }
+
+        li{list-style: none}
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #list .item{
+            float:left;
+            margin-right:5px;
+            width:100px;
+            height:30px;
+            text-align: center;
+            line-height: 30px;
+            color:white;
+        }
+        .submenu{
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li class="item">ITEM1</li>
+        <li class="item">ITEM2</li>
+        <li class="item">ITEM3
+        <ul class="submenu">
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+            <li>004</li>
+        </ul>
+        </li>
+        <li class="item">ITEM4</li>
+    </ul>
+</body>
+</html>
