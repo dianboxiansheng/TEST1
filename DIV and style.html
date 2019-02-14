@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        /*div{color:aqua;}*/
+        .ct{color:orange}
+        #class1,#class2{color:gold}
+        #div > div{background: gold}
+    </style>
+</head>
+<body>
+
+<!--内联样式-->
+<div style="color:red">内联样式</div>
+
+<!--外部样式-->
+<div id="wai">外部样式</div>
+
+<!--内部样式-->
+<div>元素选择器</div>
+<div class="ct">class选择器</div>
+<div id="class1">分组选择器</div>
+<div id="class2">分组选择器</div>
+<div id="div">后代选择器1
+    <div>后代选择器2</div>
+    <div>后代选择器2</div>
+    <h1>后代选择器2
+        <div>后代选择器3</div>
+        <div>后代选择器3</div>
+        <div>后代选择器3</div>
+    </h1>
+</div>
+
+<!--css选择器
+1、标签/元素 选择器 div{}
+2、id选择器  id唯一的  #id{}
+3、class选择器  class可以重复的  .class{}
+4、分组选择器  #div1,#div2{}
+5、后代选择器  #div1 span{}
+6、子代选择器  #div1 > span{}  IE6不支持
+7、伪类选择器  #list .item:hover
+-->
+
+
+
+
+
+
+</body>
+</html>
