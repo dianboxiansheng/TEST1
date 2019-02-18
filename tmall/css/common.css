@@ -2,3 +2,9 @@
     margin: 0;}
 li{list-style: none;}
 a{text-decoration: none;}
+.wrapper{
+    width: 1230px;
+    height: auto;
+    margin: 0 auto;
+
+}
