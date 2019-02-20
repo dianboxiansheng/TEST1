@@ -15,11 +15,38 @@
 #login-info a:hover,#quick-menu .menu:hover a{
     color:red;
 }
+#quick-menu .menu .submenu a{
+    color: #999999;
+}
+#quick-menu .menu .submenu a:hover{
+    color: red;
+}
 #login-info span,#login-info a,#quick-menu a{
     color: #999;
 }
+#quick-menu .iconfont{
+    font-size: 12px;
+}
+#quick-menu .submenu{
+    display: none;
+    color: #eee;
+    position: absolute;
+    width: 74px;
+    border: solid;
+    border-color: #eeeeee;
+    border-width: 0 1px 1px 1px;
+    padding:0 10px;
+    left: -1px;
+}
+#quick-menu .triangle:hover .submenu{
+    display: block;
+}
+
 #quick-menu{
     float:right;
+}
+.submenu:hover{
+    color: red;
 }
 #quick-menu .iconfont{
     size: 12px;
@@ -29,4 +56,37 @@
     float:left;
     padding: 0 14px;
     cursor: pointer;
+}
+#quick-menu > .triangle a:hover{
+    text-decoration: underline;
+}
+#quick-menu .triangle{
+    position: relative;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 1px;
+    height: 33px;
+}
+#quick-menu .triangle::after{
+    content:'';
+    height: 0px;
+    width: 0px;
+    border-width: 3px;
+    border-color: #ff0000 transparent transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top:50%;
+    right: 4px;
+    margin-top: -1.5px;
+}
+#quick-menu .triangle:hover::after{
+    transform: rotate(180deg);
+    transform-origin: 3px 1.5px;
+    transition: transform .4s ease;
+
+}
+#quick-menu .triangle:hover{
+
+    background: #fff;
+    border-color: #eee;
 }
